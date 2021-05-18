@@ -29,7 +29,7 @@
             <p class="input-desc">Name</p>
             <div class="input-right">
               <label for="input-label">
-                <input class="input-box" name="name" id="input-name" type="text" placeholder="First Name">
+                <input class="input-box" name="name" id="input-name" type="text" placeholder="First Name" required>
               </label>
             </div>
           </div>
@@ -38,10 +38,10 @@
               <p class="input-desc">Gender</p>
               <div class="input-right">
                 <label class="gender-input" for="gender-input">
-                  <input class="input-radio" type="radio" name="male" id="gender-input">Male
+                  <input class="input-radio" type="radio" name="gender" value="male" id="gender-input" checked>Male
                 </label>
                 <label class="gender-input" for="gender-input">
-                  <input class=" input-radio" type="radio" name="female" id="gender-input">Female
+                  <input class=" input-radio" type="radio" name="gender" value="female" id="gender-input">Female
                 </label>
               </div>
             </fieldset>
@@ -51,7 +51,7 @@
             <p class="input-desc">Date of birth</p>
             <div class="input-right">
               <label for="input-label">
-                <input class="input-box" name="date-of-birth" id="input-name" type="text" placeholder="2001-01-02">
+                <input class="input-box" name="date-of-birth" id="input-name" type="text" placeholder="2001-01-02" required>
               </label>
             </div>
           </div>
@@ -61,7 +61,7 @@
             <p class="input-desc">Date of birth</p>
             <div class="input-right">
               <label for="input-label">
-                <input class="input-box" name="email" id="input-name" type="email" placeholder="kendall@email.com">
+                <input class="input-box" name="email" id="input-name" type="email" placeholder="kendall@email.com" required>
               </label>
             </div>
           </div>
@@ -70,7 +70,7 @@
             <p class="input-desc">Mobile</p>
             <div class="input-right">
               <label for="input-label">
-                <input class="input-box" name="phone" id="input-name" type="tel" placeholder="+998 90 975 43 23">
+                <input class="input-box" name="phone" id="input-name" type="tel" placeholder="+998 90 975 43 23" required>
               </label>
             </div>
           </div>
@@ -79,7 +79,7 @@
             <p class="input-desc">Customer ID</p>
             <div class="input-right">
               <label for="input-label">
-                <input class="input-box" name="customer-id" id="input-name" type="number" placeholder="576802-ERD0348 45">
+                <input class="input-box" name="customer-id" id="input-name" type="number" placeholder="576802-ERD0348 45" required>
               </label>
             </div>
           </div>
@@ -88,14 +88,15 @@
           <div class="input-div">
             <p class="input-desc">Membership</p>
             <div class="input-right">
-              <label class="membership-input" for="membership-input">
-                <input class="input-radio" type="radio" name="membership-classic" id="membership-input">Classic
+              <label class="membership-input" for="membership-input-classic">
+                <input class="input-radio" type="radio" name="membership" value="classic"
+                  id="membership-input-classic" checked>Classic
               </label>
-              <label class="membership-input" for="membership-input">
-                <input class=" input-radio" type="radio" name="membership-silver" id="gender-input">Silver
+              <label class="membership-input" for="membership-input-silver">
+                <input class=" input-radio" type="radio" name="membership" value="silver" id="gender-input-silver">Silver
               </label>
-              <label class="membership-input" for="membership-input">
-                <input class=" input-radio" type="radio" name="membership-gold" id="membership-input">gold
+              <label class="membership-input" for="membership-input-gold">
+                <input class=" input-radio" type="radio" name="membership" value="gold" id="membership-input-gold">gold
               </label>
             </div>
             </fieldset>
