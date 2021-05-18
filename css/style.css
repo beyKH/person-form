@@ -236,15 +236,36 @@ fieldset{
   padding: 10px 25px;
   border-radius: 5px;
   color: white;
+  transition: opacity 0.3s ease,    background-color 0.3s ease;
+
 }
 
 
 .btn-cancel{
   color: #383838;
+  background-color: #f5F8F9;
 }
+
+.btn-cancel:hover{
+  background-color: #b3b3b327;
+}
+
+.btn-cancel:active{
+  opacity: 0.6;
+}
+
 .btn-save{
   padding: 10px 30px;
   margin-left: 10px;
   background-color: var(--green);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
 
+
+.btn-save:hover{
+  background-color: #60e6c4c7;
+}
+
+.btn-save:active{
+  opacity: 0.6;
 }
